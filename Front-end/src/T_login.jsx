@@ -37,7 +37,7 @@ const T_login = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         // In your login component, after a successful login:
-        axios.post('http://localhost:3001/T_login', { email, password })
+        axios.post('https://arty-home-api.vercel.app/T_login', { email, password })
         .then(result => {
         if (result.data.status === "success") {
             navigate('/T_Dash', { state: { user: result.data.user } });

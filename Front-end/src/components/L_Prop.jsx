@@ -43,7 +43,7 @@ const L_Prop = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3001/P_Reg', { address, size, rent ,image})
+        axios.post('https://arty-home-api.vercel.app/P_Reg', { address, size, rent ,image})
             .then(result => {
                 console.log(result);
                 window.location.reload();
@@ -53,7 +53,7 @@ const L_Prop = () => {
     };
 
     useEffect(() => {
-     axios.get('http://localhost:3001/P_Fetch')
+     axios.get('https://arty-home-api.vercel.app/P_Fetch')
      .then(response=>{
         setVacantProperties(response.data);
      })

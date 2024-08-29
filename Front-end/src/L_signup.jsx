@@ -37,7 +37,7 @@ const L_signup = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3001/L_Register', { name, email, password })
+        axios.post('https://arty-home-api.vercel.app/L_Register', { name, email, password })
             .then(result => {
                 console.log(result);
                 if (result.data === 'same') {
