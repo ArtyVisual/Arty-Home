@@ -6,19 +6,19 @@ const LandlordsModel = require('./models/Landlords')
 const VPropertyModel = require("./models/VProperty")
 
 const app =express()
+
+const corsOptions = {
+    origin: 'https://arty-home.vercel.app', // Allow only this origin
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
+    allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
+    credentials: true, // Allow cookies or HTTP authentication
+    optionsSuccessStatus: 204, // For legacy browser support
+};
+
+app.use(cors(corsOptions)); // Use CORS middleware
 app.use(express.json())
 
-
-app.use((req, res, next) => {
-    // Set CORS headers manually
-    res.header('Access-Control-Allow-Origin', 'http://localhost:5173'); // Allow all origins (or specify your domain)
-    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-    res.header('Access-Control-Allow-Headers', 'Content-Type');
-    next();
-  })
-
-// Proxy setup
-
+app.options('*', cors(corsOptions)); // For all routes
 
 mongoose.connect("mongodb+srv://abbasvajwana1:abbasatlas77@cluster1.0bhubyy.mongodb.net/rentDB", { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log("Connected to MongoDB"))
