@@ -1,0 +1,114 @@
+.anton-sc {
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+  }
+
+.lobster {
+    font-family: "Lobster", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+.pacifico {
+    font-family: "Pacifico", cursive;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+.oleo-script {
+    font-family: "Oleo Script", system-ui;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.bebas-neue {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.zain {
+    font-family: "Zain", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+.main1{
+    background-image: url("img/house1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main2{
+    background-image: url("img/house2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.glass-effect {
+    background: rgba(110, 190, 255, 0.634);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.584);
+    box-shadow: 10px 10px 10px rgba(1, 0, 0, 0.517);
+}
+.active{
+    
+    text-shadow: 3px 4px 5px  rgb(76, 58, 12);
+    font-size: 1.1rem;
+    color: rgb(231, 191, 13);
+   
+}
+
+li{
+  list-style:square;
+}
+
+/* Custom Scrollbar for WebKit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 20px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #eeebe500; /* Background of the scrollbar track */
+  border-radius: 20px; /* Rounding the track corners */
+}
+
+::-webkit-scrollbar-thumb {
+ 
+  border-radius: 50px; /* Rounding the scrollbar thumb corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #55555500; /* Color when hovering over the scrollbar */
+}
+
+/* Custom Scrollbar for Firefox */
+* {
+  scrollbar-width:thin; /* Thin scrollbar */
+  scrollbar-color: #2443de #eeebe500; /* Thumb color, track color */
+}
+
+.max-h-0 {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.max-h-screen {
+  max-height: 100vh;
+}
+
+.transition-all {
+  transition: all 2s ease-in-out;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
