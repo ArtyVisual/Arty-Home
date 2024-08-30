@@ -154,38 +154,38 @@ const L_login = () => {
                     </div>
 
                 </div>
-                <div className={`justify-items-center items-center ${loading ? 'blur' : ''} `} >
-                    {loading && 
-                    /* From Uiverse.io by RafaM-dev */ 
-                    <section class="loader">
-                        <div>
-                            <div>
-                            <span class="one h6"></span>
-                            <span class="two h3"></span>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div>
-                            <span class="one h1"></span>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div>
-                            <span class="two h2"></span>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                            <span class="one h4"></span>
-                            </div>
-                        </div>
-                        </section>
-                  }
-                </div>
 
             </form>
+        <div className={`main1 ${loading ? 'blur' : ''}`} >
+            {loading && 
+            /* From Uiverse.io by RafaM-dev */ 
+            <section class="loader">
+                <div>
+                    <div>
+                    <span class="one h6"></span>
+                    <span class="two h3"></span>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                    <span class="one h1"></span>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                    <span class="two h2"></span>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                    <span class="one h4"></span>
+                    </div>
+                </div>
+                </section>
+            }
+        </div>
         </div>
     )
 }
