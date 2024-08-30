@@ -123,7 +123,7 @@ const L_Dash = () => {
                                         <div className='text ntext1'>{mostrecentRequest.from}</div>
                                         <div className='text ntext1'>{mostrecentRequest.date}</div>
                                         <div className='text ntext1'>{mostrecentRequest.subject}</div>
-                                        <div className={`text-lg font-semibold px-0 lobster ${request.status === 'Pending' ? 'text-red-500' : 'text-amber-700'}`}>
+                                        <div className={`text-lg font-semibold px-0 lobster ${mostrecentRequest.status === 'Pending' ? 'text-red-500' : 'text-amber-700'}`}>
                                             {mostrecentRequest.status}
                                         </div>
                                     </div>
