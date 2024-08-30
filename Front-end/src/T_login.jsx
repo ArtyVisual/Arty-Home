@@ -7,12 +7,15 @@ import axios from 'axios'
 import x from './components/img/x-mark.png'
 import { NavLink } from 'react-router-dom';
 import home from './components/img/home.png';
+import { useForm } from 'react-hook-form';
 
 const T_login = () => {
-
+    const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm();
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()
     const [errorMessage, setErrorMessage] = useState('');
+    const [loading, setLoading] = useState(false);
+
     const navigate = useNavigate()
 
     useEffect(() => {
@@ -34,8 +37,17 @@ const T_login = () => {
         setErrorMessage('');
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
+    const delay = (d) => {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                resolve();
+            }, d * 1000);
+        });
+    };
+
+    const onSubmit = async (data) => {
+        setLoading(true); // Show loading text
+        await delay(1);
         // In your login component, after a successful login:
         axios.post('https://arty-home-api.vercel.app/T_login', { email, password })
         .then(result => {
@@ -48,12 +60,17 @@ const T_login = () => {
             setErrorMessage('No user found with this email address !');
         }
         })
-        .catch(err => console.log(err));
+        .catch(err => console.log(err))
+        .finally(() => {
+            setLoading(false); // Hide loading text after request completes
+        });
 
     }
 
     return (
-        <div className='main2'>
+        <div>
+    
+        <div className={`main1 ${loading ? 'blur' : ''}`}>
 
             {errorMessage && (
                 <div className='flex justify-center items-center text-center my-1 p-1 bg-red-700'>
@@ -81,7 +98,7 @@ const T_login = () => {
                 </NavLink>
             </div>
 
-            <form onSubmit={handleSubmit}  >
+            <form onSubmit={handleSubmit(onSubmit)}  >
 
                 <div className='flex items-start justify-center  h-screen '>
                     <div className='glass-effect w-5/6 md:w-1/4 h-3/4 grid m-10 rounded-3xl p-4 justify-center items-center' >
@@ -112,7 +129,7 @@ const T_login = () => {
                         </div>
                         <div className='item-center justify-center flex ' >
                             <button
-
+                                disabled={loading}
                                 className=' text-center font-bold  py-2 px-24 hover:bg-transparent hover:ring-4 hover:ring-white bg-slate-900 rounded-md text-white '
                                 type='Submit'
                             >
@@ -140,6 +157,38 @@ const T_login = () => {
                 </div>
 
             </form>
+        </div>
+        <div >
+            {loading &&
+                /* From Uiverse.io by RafaM-dev */
+                <section class="loader">
+                    <div>
+                        <div>
+                            <span class="one h6"></span>
+                            <span class="two h3"></span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <span class="one h1"></span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <span class="two h2"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <span class="one h4"></span>
+                        </div>
+                    </div>
+                </section>
+            }
+        </div>
+
         </div>
     )
 }
