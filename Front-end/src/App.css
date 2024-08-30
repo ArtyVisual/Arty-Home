@@ -114,7 +114,6 @@ li{
 }
 
 
-/* loader css */
 
 /* Main loader container styles */
 .loader {
@@ -126,7 +125,7 @@ li{
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  background: rgba(0, 179, 255, 0.466); /* Semi-transparent white background */
   z-index: 9999; /* Make sure the loader is on top of other elements */
 }
 
@@ -167,9 +166,11 @@ li{
 
 .loader div div span {
   position: absolute;
-  width: 4px;
+  width: 5px;
   height: 0%;
-  background: conic-gradient(from 90deg, #001aff, #e8d400, #001aff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background: white;
   z-index: 999999;
 }
 

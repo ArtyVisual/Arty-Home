@@ -67,7 +67,8 @@ const L_login = () => {
     }
 
     return (
-        <div className='main1'>
+        <div>
+        <div className={`main1 ${loading ? 'blur' : ''}`}>
 
             {errorMessage && (
                 <div className='flex justify-center items-center text-center my-1 p-1 bg-red-700'>
@@ -156,33 +157,34 @@ const L_login = () => {
                 </div>
 
             </form>
-        <div className={`main1 ${loading ? 'blur' : ''}`} >
-            {loading && 
-            /* From Uiverse.io by RafaM-dev */ 
-            <section class="loader">
-                <div>
+        </div>
+        <div >
+            {loading &&
+                /* From Uiverse.io by RafaM-dev */
+                <section class="loader">
                     <div>
-                    <span class="one h6"></span>
-                    <span class="two h3"></span>
+                        <div>
+                            <span class="one h6"></span>
+                            <span class="two h3"></span>
+                        </div>
                     </div>
-                </div>
 
-                <div>
                     <div>
-                    <span class="one h1"></span>
+                        <div>
+                            <span class="one h1"></span>
+                        </div>
                     </div>
-                </div>
 
-                <div>
                     <div>
-                    <span class="two h2"></span>
+                        <div>
+                            <span class="two h2"></span>
+                        </div>
                     </div>
-                </div>
-                <div>
                     <div>
-                    <span class="one h4"></span>
+                        <div>
+                            <span class="one h4"></span>
+                        </div>
                     </div>
-                </div>
                 </section>
             }
         </div>
