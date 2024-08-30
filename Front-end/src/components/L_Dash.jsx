@@ -5,7 +5,7 @@ import house2 from './img/house2.jpg';
 
 const L_Dash = () => {
     // State to hold recent requests and broadcasts
-    const [mostrecentRequest, setMostRecentRequest] = useState([]);
+    const [mostrecentRequest, setMostRecentRequest] = useState(null);
     const [mostRecentBroadcast, setMostRecentBroadcast] = useState(null);
 
     // Function to limit message to 20 words
@@ -19,10 +19,10 @@ const L_Dash = () => {
         // Fetching 'recentRequests' from localStorage
         const storedRequests = localStorage.getItem('recentRequests');
         if (storedRequests) {
-            const request = JSON.parse(storedRequests);
-            if (request.length > 0) {
+            const requests = JSON.parse(storedRequests);
+            if (requests.length > 0) {
                 // Set the most recent broadcast (assuming the broadcasts are ordered by date)
-                setMostRecentRequest(request[0]); // Pick the first one as the most recent
+                setMostRecentRequest(requests[0]); // Pick the first one as the most recent
             }
         }
 
@@ -112,7 +112,7 @@ const L_Dash = () => {
                         <div className='heading mb-5 w-full py-2'>Active Request</div>
                         {/* Display recent requests */}
                         { mostrecentRequest ? (
-                                <div key={index} className='flex justify-items-center gap-4'>
+                                <div className='flex justify-items-center gap-4'>
                                     <div className='ntext pl-2 w-32 grid gap-2'>
                                         <div>From :</div>
                                         <div>Date :</div>
