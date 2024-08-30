@@ -5,7 +5,7 @@ import house2 from './img/house2.jpg';
 
 const L_Dash = () => {
     // State to hold recent requests and broadcasts
-    const [recentRequests, setRecentRequests] = useState([]);
+    const [mostrecentRequest, setMostRecentRequest] = useState([]);
     const [mostRecentBroadcast, setMostRecentBroadcast] = useState(null);
 
     // Function to limit message to 20 words
@@ -19,7 +19,11 @@ const L_Dash = () => {
         // Fetching 'recentRequests' from localStorage
         const storedRequests = localStorage.getItem('recentRequests');
         if (storedRequests) {
-            setRecentRequests(JSON.parse(storedRequests)); // Parse and set the requests
+            const request = JSON.parse(storedRequests);
+            if (request.length > 0) {
+                // Set the most recent broadcast (assuming the broadcasts are ordered by date)
+                setMostRecentRequest(request[0]); // Pick the first one as the most recent
+            }
         }
 
         // Fetching 'broadcasts' from localStorage
@@ -107,8 +111,7 @@ const L_Dash = () => {
                     <div className='box max-w-80 bg-white p-4 grid justify-center my-5 justify-items-center'>
                         <div className='heading mb-5 w-full py-2'>Active Request</div>
                         {/* Display recent requests */}
-                        {recentRequests.length > 0 ? (
-                            recentRequests.map((request, index) => (
+                        { mostrecentRequest ? (
                                 <div key={index} className='flex justify-items-center gap-4'>
                                     <div className='ntext pl-2 w-32 grid gap-2'>
                                         <div>From :</div>
@@ -117,15 +120,15 @@ const L_Dash = () => {
                                         <div>Status :</div>
                                     </div>
                                     <div className='w-36 grid gap-2'>
-                                        <div className='text ntext1'>{request.from}</div>
-                                        <div className='text ntext1'>{request.date}</div>
-                                        <div className='text ntext1'>{request.subject}</div>
+                                        <div className='text ntext1'>{mostrecentRequest.from}</div>
+                                        <div className='text ntext1'>{mostrecentRequest.date}</div>
+                                        <div className='text ntext1'>{mostrecentRequest.subject}</div>
                                         <div className={`text-lg font-semibold px-0 lobster ${request.status === 'Pending' ? 'text-red-500' : 'text-amber-700'}`}>
-                                            {request.status}
+                                            {mostrecentRequest.status}
                                         </div>
                                     </div>
                                 </div>
-                            ))
+                            
                         ) : (
                             <div>No recent requests found.</div>
                         )}
