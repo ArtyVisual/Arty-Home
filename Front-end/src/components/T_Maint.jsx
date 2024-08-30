@@ -190,6 +190,7 @@ const T_Maint = () => {
                                         value={subject}
                                         onChange={(e) => setSubject(e.target.value)}
                                     />
+                                    
                                 </div>
                                 <div>
                                     <span>Enter Description </span>
@@ -206,15 +207,18 @@ const T_Maint = () => {
                                     />
                                 </div>
                                 <div>
-                                    <span>From (Address/Name) </span>
-                                    <input
+                                    <span>Select Address </span>
+                                    <select
                                         required
-                                        className='text-xl placeholder:text-yellow-800'
-                                        type="text"
-                                        placeholder='Enter Address or Name'
+                                        className='text-xl placeholder:text-yellow-950 px-10'
                                         value={from}
                                         onChange={(e) => setFrom(e.target.value)}
-                                    />
+                                    >
+                                        <option value="" disabled>Select Address</option>
+                                        <option value='Ashok Nagar'>Ashok Nagar</option>
+                                        <option value='Sun Colony'>Sun Colony</option>
+                                    </select>
+
                                 </div>
                                 <div>
                                     <span>Attach Image </span>
