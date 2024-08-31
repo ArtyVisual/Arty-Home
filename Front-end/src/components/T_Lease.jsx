@@ -43,7 +43,10 @@ const T_Lease = () => {
     return (
         <div>
             <div className='back'>
-                <div className='top py-2'>
+                <div style={{ color: '#a27a47' }} className='top1 md:hidden left-1/2 -ml-12 top-5 text-3xl zain'>
+                     LEASE
+                </div> 
+                <div className='hidden md:flex top py-2'>
                     <div className='logo flex justify-start items-center lg:p-4'>
                         <img className='h-8 w-10 mx-2' src={logo} alt="" />
                         <span className='name font-bold text-xl'>Arty-Home</span>
@@ -51,44 +54,50 @@ const T_Lease = () => {
                     <span style={{ color: '#a27a47' }} className='lease zain '>LEASES</span>
                 </div>
                 <div className='ml-32 grid justify-items-center items-center justify-center'>
-                    <div className='first pl-16 grid justify-items-center py-4'>
+                     <div className='md:pl-20 grid justify-items-center py-4'>
                         <div className='p-4 text-3xl text-blue-700 anton-sc'>
                             Current Lease
                         </div>
-                        <div className='box flex justify-center items-center gap-5 p-8'>
+                        <div className='box md:flex grid justify-items-center justify-center items-center gap-5 p-8'>
                             <div>
                                 <img className='w-52 h-32 ring-1 ring-yellow-950 rounded-md' src={house1} alt="" />
                             </div>
-                            <div className='p-4 flex gap-8'>
-                                <div className='grid justify-center ntext font-bold justify-items-center items-center'>
-                                    <span>Address</span>
-                                    <span>Owner Name</span>
-                                    <span>Agreement Date</span>
-                                    <span>Rent</span>
+                            <div className='p-4 md:flex gap-8'>
+                                <div className='grid md:w-80 ntext font-bold justify-items-start items-center'>
+                                    <div className=''>
+                                        <span>Address</span>
+                                        <span className='md:pl-20 pr-2'>:</span>
+                                        <span >Ashok Nagar</span>
+                                    </div>
+                                    <div className=''>
+                                        <span>Owner Name</span>
+                                        <span className='md:pl-10 pr-2'>:</span>
+                                        <span>Mr. Ashish Mehta</span>
+                                    </div>
+                                    <div className=''>
+                                        <span>Agreement Date </span>
+                                        <span  className='md:pl-4 pr-2'>:</span>
+                                        <span>30/9/23</span>
+                                    </div>
+                                    <div className=''>
+                                        <span>Rent</span>
+                                        <span  className='md:pl-24 ml-2 pr-2'>:</span>
+                                        <span>30000</span>
+                                    </div>
+
                                 </div>
-                                <div className='grid justify-start ntext justify-items-start items-center'>
-                                    <span>:</span>
-                                    <span>:</span>
-                                    <span>:</span>
-                                    <span>:</span>
-                                </div>
-                                <div className='grid text ntext1 justify-start justify-items-start items-center'>
-                                    <span>Ashok Nagar, Ellis Tower, T3, Indore 30094</span>
-                                    <span>Mr. Ashish Mehta</span>
-                                    <span>30/9/23</span>
-                                    <span>30000</span>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
 
-                    <div className='ml-28 grid justify-items-center justify-center p-10'>
+                    <div className='md:ml-28 grid justify-items-center justify-center p-10'>
                         <div className='p-4 text-3xl text-blue-700 anton-sc'>
                             Past Lease
                         </div>
-                        <div className='flex justify-between items-center gap-10'>
+                        <div className='md:flex grid justify-between items-center gap-10'>
                             {leaseDetails.map((lease) => (
-                                <div className='box w-1/3 p-8' key={lease.id}>
+                                <div className='box p-8' key={lease.id}>
                                     <div className='grid'>
                                         <span className='ntext'>{lease.date.split("/")[2]}--{parseInt(lease.date.split("/")[2]) + 1}</span>
                                         <span className='text'>{lease.address}</span>
@@ -110,7 +119,7 @@ const T_Lease = () => {
                                 <div className='p-4 text-3xl text-blue-900 anton-sc'>
                                   Past Lease Details
                                 </div>
-                                <div className='box flex justify-center items-center gap-5 p-8'>
+                                <div className='box md:flex grid justify-center items-center justify-items-center gap-5 p-8'>
                                     <div>
                                         <img className='w-52 h-32 ring-1 ring-yellow-950 rounded-md' src={house1} alt="" />
                                     </div>
