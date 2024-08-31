@@ -70,7 +70,7 @@ const T_login = () => {
     return (
         <div>
     
-        <div className={`main1 ${loading ? 'blur' : ''}`}>
+        <div className={`main2 ${loading ? 'blur' : ''}`}>
 
             {errorMessage && (
                 <div className='flex justify-center items-center text-center my-1 p-1 bg-red-700'>
