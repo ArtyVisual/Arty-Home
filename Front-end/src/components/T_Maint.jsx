@@ -104,7 +104,7 @@ const T_Maint = () => {
                                             </div>
                                             <div className='flex justify-center md:text-lg text-sm items-center gap-3'>
                                                 <span>Description</span>
-                                                <span className='pl-2'>:</span>
+                                                <span className='pl-3'>:</span>
                                                 <span className='text ntext1  md:text-lg text-sm'>{request.description}</span>
                                             </div>
                                             <div className='flex justify-center items-center gap-3'>
