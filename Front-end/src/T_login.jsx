@@ -18,12 +18,6 @@ const T_login = () => {
 
     const navigate = useNavigate()
 
-    useEffect(() => {
-        document.body.style.overflow = 'hidden';
-        return () => {
-            document.body.style.overflow = '';
-        };
-    }, []);
 
 
     const hideError = () => {

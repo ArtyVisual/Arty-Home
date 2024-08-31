@@ -21,13 +21,6 @@ const T_signup = () => {
     const [loading, setLoading] = useState(false);
     const navigate = useNavigate()
 
-    useEffect(() => {
-        document.body.style.overflow = 'hidden';
-        return () => {
-            document.body.style.overflow = '';
-        };
-    }, []);
-
     const hideError = () => {
         setErrorMessage('');
     };
