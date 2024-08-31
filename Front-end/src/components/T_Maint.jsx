@@ -173,12 +173,12 @@ const T_Maint = () => {
                         </div>
                     </div >
 
-                    <div ref={newReqRef}  className='my-5 px-10 grid justify-items-center items-start'>
+                    <div ref={newReqRef}  className='my-5 grid justify-items-center items-start'>
                         <div  className='py-5 text-3xl text-blue-700 anton-sc '>
                             Create New Request
                         </div>
                         <form onSubmit={handleSubmit}>
-                            <div className='form form1 px-10 py-4 grid justify-items-center'>
+                            <div className='form max-w-80 md:max-w-2xl md:px-10 form1 py-4 grid justify-items-center'>
                                 <div>
                                     <input className='hidden' type="date" value={currentDate} readOnly />
                                 </div>
