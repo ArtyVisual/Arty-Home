@@ -44,13 +44,11 @@
   text-align: center;
   padding: 0.5rem;
   box-shadow:inset -5px -5px 5px #2c2d2d57;
-  font-size: 1.5vw;
   
 }
 
 .selbg:hover{
   box-shadow:inset -1px -1px 5px #373738c4;
-  font-size: 1.4vw;
 }
 
 .sel{
