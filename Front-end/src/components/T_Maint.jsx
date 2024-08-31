@@ -71,7 +71,10 @@ const T_Maint = () => {
     return (
         <div>
             <div>
-                <div className='top py-2'>
+                <div style={{ color: '#a27a47' }} className='top1 md:hidden left-1/3 top-5 text-3xl zain'>
+                    MAINTENANCE
+                </div>
+                <div className='hidden md:flex top py-2'>
                     <div className='logo flex justify-start items-center lg:p-4'>
                         <img className='h-8 w-10 mx-2' src={logo} alt="" />
                         <span className='name font-bold text-xl'>Arty-Home</span>
@@ -79,7 +82,7 @@ const T_Maint = () => {
                     <span style={{ color: '#a27a47' }} className='maint zain'>MAINTENANCE</span>
                 </div>
 
-                <div className='ml-56 grid items-center justify-center'>
+                <div className='md:ml-56 p-5 grid items-center justify-center'>
                     <div className='grid mt-28 justify-items-center'>
                         <span className='mt-5 text-blue-700  text-center text-3xl anton-sc'>Active Requests</span>
                         <div className='box px-6 py-2 my-4 grid justify-items-start max-w-5xl'>

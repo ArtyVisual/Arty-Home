@@ -9,7 +9,10 @@ const T_Finance = () => {
     return (
         <div>
             <div className='back'>
-                <div className='top py-2'>
+                <div style={{ color: '#a27a47' }} className='top1 md:hidden left-1/2 -ml-10 top-5 text-3xl zain'>
+                     FINANCE
+                </div> 
+                <div className='hidden md:flex top py-2'>
                     <div className='logo flex justify-start items-center lg:p-4'>
                         <img className='h-8 w-10 mx-2' src={logo} alt="" />
                         <span className='name font-bold text-xl'>Arty-Home</span>
@@ -17,9 +20,9 @@ const T_Finance = () => {
                     <span style={{ color: '#a27a47' }} className='fince zain'>FINANCE</span>
                 </div>
 
-                <div className='fin1 ml-52 fin pt-32 justify-center flex flex-wrap items-center '>
+                <div className='fin1 md:ml-52 fin pt-32 justify-center flex flex-wrap items-center '>
 
-                    <div className='w-2/6 h-56 my-8 mx-10 px-5 py-10 box flex justify-between items-center'>
+                    <div className='md:w-2/6 h-56 my-8 mx-10 px-5 py-10 box flex justify-between items-center'>
 
                         <div className='vertical text-3xl  font-bold text-blue-700'>
                             AUGUST
@@ -56,7 +59,7 @@ const T_Finance = () => {
                         </div>
                     </div>
 
-                    <div className='w-2/6 h-56 my-8 mx-10 px-5 py-10 box flex justify-between items-center'>
+                    <div className='md:w-2/6 h-56 my-8 mx-10 px-5 py-10 box flex justify-between items-center'>
 
                         <div className='vertical text-3xl  font-bold text-blue-700'>
                             JULY
@@ -100,7 +103,7 @@ const T_Finance = () => {
                         </div>
                     </div>
 
-                    <div className='w-2/6 h-56 my-8 mx-10 px-5 py-10 box flex justify-between items-center'>
+                    <div className='md:w-2/6 h-56 my-8 mx-10 px-5 py-10 box flex justify-between items-center'>
 
                         <div className='vertical text-3xl  font-bold text-blue-700'>
                             JUNE
@@ -137,7 +140,7 @@ const T_Finance = () => {
                         </div>
                     </div>
 
-                    <div className='w-2/6 h-56 my-8 mx-10 px-5 py-10 box flex justify-between items-center'>
+                    <div className='md:w-2/6 h-56 my-8 mx-10 px-5 py-10 box flex justify-between items-center'>
 
                         <div className='vertical text-3xl  font-bold text-blue-700'>
                             MAY
@@ -174,7 +177,7 @@ const T_Finance = () => {
                         </div>
                     </div>
                     
-                    <div className='w-2/6 h-56 my-8 mx-10 px-5 py-10 box flex justify-between items-center'>
+                    <div className='md:w-2/6 h-56 my-8 mx-10 px-5 py-10 box flex justify-between items-center'>
 
                         <div className='vertical text-3xl  font-bold text-blue-700'>
                             APRIL
@@ -218,7 +221,7 @@ const T_Finance = () => {
                         </div>
                     </div>
 
-                    <div className='w-2/6 h-56 my-8 mx-10 px-5 py-10 box flex justify-between items-center'>
+                    <div className='md:w-2/6 h-56 my-8 mx-10 px-5 py-10 box flex justify-between items-center'>
 
                         <div className='vertical text-3xl  font-bold text-blue-700'>
                             MARCH
