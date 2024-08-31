@@ -82,10 +82,10 @@ const T_Maint = () => {
                     <span style={{ color: '#a27a47' }} className='maint zain'>MAINTENANCE</span>
                 </div>
 
-                <div className='md:ml-56 px-16 grid items-center justify-center'>
+                <div className='md:ml-56 grid items-center justify-center'>
                     <div className='grid mt-28 justify-items-center'>
                         <span className='mt-5 text-blue-700  text-center text-3xl anton-sc'>Active Requests</span>
-                        <div className='box px-6 py-2 my-4 grid justify-items-start max-w-5xl'>
+                        <div className='box px-6 py-2 my-4 mx-10 grid justify-items-start max-w-5xl'>
                             {recentRequests.length === 0 ? (
                                 <span className='text-center mt-4 p-4'>No recent requests.</span>
                             ) : (
@@ -95,22 +95,22 @@ const T_Maint = () => {
                                             <div className='flex justify-center items-center gap-3'>
                                                 <span>Date</span>
                                                 <span className=' pl-12'>:</span>
-                                                <span className='text ntext1'>{request.date}</span>
+                                                <span className='text ntext1  md:text-lg text-sm'>{request.date}</span>
                                             </div>
                                             <div className='flex justify-center items-center gap-3'>
                                                 <span>Subject</span>
                                                 <span className=' pl-7'>:</span>
                                                 <span className='text ntext1 '>{request.subject}</span>
                                             </div>
-                                            <div className='flex justify-center items-center gap-3'>
+                                            <div className='flex justify-center md:text-lg text-sm items-center gap-3'>
                                                 <span>Description</span>
                                                 <span >:</span>
-                                                <span className='text ntext1'>{request.description}</span>
+                                                <span className='text ntext1  md:text-lg text-sm'>{request.description}</span>
                                             </div>
                                             <div className='flex justify-center items-center gap-3'>
                                                 <span>Status</span>
                                                 <span className=' pl-10'>:</span>
-                                                <span className={`text-center font-semibold text-xl lobster ${request.status === 'Pending' ? 'text-blue-500' : 'text-amber-800'}`}>{request.status}</span>
+                                                <span className={`text-center font-semibold md:text-xl lobster ${request.status === 'Pending' ? 'text-blue-500' : 'text-amber-800'}`}>{request.status}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -135,7 +135,7 @@ const T_Maint = () => {
                         </div>
 
                         <span className='text-blue-700 text-center mt-10 text-3xl anton-sc'>Closed Requests</span>
-                        <div  className='box p-6 my-4 grid justify-items-start max-w-5xl'>
+                        <div  className='box p-6 my-4 mx-10 grid justify-items-start max-w-5xl'>
                             {pastRequests.length > 0 ? (
                                 <>
                                     {pastRequests.map((request, index) => (
@@ -144,22 +144,22 @@ const T_Maint = () => {
                                                 <div className='flex justify-center items-center gap-3'>
                                                     <span>Date</span>
                                                     <span className=' pl-12'>:</span>
-                                                    <span className='text ntext1 '>{request.date}</span>
+                                                    <span className='text ntext1  md:text-lg text-sm'>{request.date}</span>
                                                 </div>
                                                 <div className='flex justify-center items-center gap-3'>
                                                     <span>Subject</span>
                                                     <span className=' pl-7'>:</span>
-                                                    <span className='text ntext1'>{request.subject}</span>
+                                                    <span className='text ntext1  md:text-lg text-sm'>{request.subject}</span>
                                                 </div>
                                                 <div className='flex justify-center items-center gap-3'>
                                                     <span>Description</span>
                                                     <span >:</span>
-                                                    <span className='text ntext1'>{request.description}</span>
+                                                    <span className='text ntext1  md:text-lg text-sm'>{request.description}</span>
                                                 </div>
                                                 <div  className='flex justify-center items-center gap-3'>
                                                     <span>Status</span>
                                                     <span className=' pl-10'>:</span>
-                                                    <span className={`text-center font-semibold text-xl lobster ${request.status === 'Resolved' ? 'text-green-500' : 'text-red-500'}`}>
+                                                    <span className={`text-center font-semibold md:text-xl lobster ${request.status === 'Resolved' ? 'text-green-500' : 'text-red-500'}`}>
                                                         {request.status}
                                                     </span>
                                                 </div>
@@ -173,7 +173,7 @@ const T_Maint = () => {
                         </div>
                     </div >
 
-                    <div ref={newReqRef}  className='my-5 grid justify-items-center items-start'>
+                    <div ref={newReqRef}  className='my-5 mx-10 grid justify-items-center items-start'>
                         <div  className='py-5 text-3xl text-blue-700 anton-sc '>
                             Create New Request
                         </div>
