@@ -83,6 +83,11 @@
   z-index: 999;
   width: 100%;
 }
+.top1{
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
 
 .dash{
   position: relative;
@@ -170,6 +175,7 @@
   background-color:  #0101fa;
   text-align: center;
   font-weight: 800;
+  width: 300px;
   color: aliceblue;
 }
 .image{

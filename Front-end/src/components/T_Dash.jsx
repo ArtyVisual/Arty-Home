@@ -45,7 +45,10 @@ const T_Dash = () => {
 
     return (
         <div className='back'>
-            <div className='top flex py-2 '>
+            <div style={{ color: '#a27a47' }} className='top1 md:hidden left-1/3 top-5 text-3xl zain'>
+                   DASHBOARD
+            </div>
+            <div className='hidden md:flex top py-2 '>
                 <div className='logo flex justify-start items-center lg:p-4' >
                     <img className='h-8 w-10 mx-2' src={logo} alt="" />
                     <span className='name font-bold text-xl'>Arty-Home</span>
@@ -54,11 +57,11 @@ const T_Dash = () => {
                     <span style={{ color: '#a27a47' }} className='dash zain'>DASHBOARD</span>
                 </div>
             </div>
-            <div className='center flex justify-start items-center flex-wrap'>
+            <div className='md:pl-64 md:ml-5  md:flex grid justify-items-center  items-center md:justify-start md:pt-28 pt-16 '>
 
-                <div className='first grid mt-10 p-10'>
+                <div className=' grid md:p-10'>
 
-                    <div className='box bg-white p-4 grid justify-center my-5 justify-items-center  '>
+                    <div className='box max-w-80 min-w-80 bg-white p-4 grid justify-center my-5 justify-items-center '>
                         <div className='heading mb-5 w-full py-2'>
                             Leases
                         </div>
@@ -75,9 +78,9 @@ const T_Dash = () => {
                             </div>
                             
                         </div>
-                    </div>
-                    <div className='box bg-white p-4 grid justify-center my-3 justify-items-center '>
-                        <div className='heading mb-4 w-full py-2  px-20 '>
+                    </div> 
+                    <div className='box max-w-80 min-w-80 bg-white p-4 grid justify-center my-3 justify-items-center '>
+                        <div className='heading mb-4 w-full py-2 '>
                             Payment History
                         </div>
                         <div className='grid  justify-between items-center gap-2 '>
@@ -116,9 +119,9 @@ const T_Dash = () => {
                     
 
                 </div>
-                <div className='second w-fit grid  justify-item-start items-start align-top mt-10 p-10'>
+                <div className='grid md:p-10'>
 
-                    <div className='box max-w-80 bg-white p-4 grid justify-center my-5 justify-items-center'>
+                    <div className='box max-w-80 min-w-80 bg-white p-4 grid justify-center my-5 justify-items-center'>
                         <div className='heading mb-5 w-full py-2'>Active Request</div>
                         {/* Display recent requests */}
                         {recentRequests.length > 0 ? (
@@ -143,7 +146,7 @@ const T_Dash = () => {
                         )}
                     </div>
                     
-                    <div className='box max-w-80 bg-white p-4 grid h-fit justify-center my-5 justify-items-center'>
+                    <div className='box max-w-80 min-w-80 bg-white p-4 grid h-fit justify-center my-5 justify-items-center'>
                         <div className='heading mb-4 w-full py-2'>Communication</div>
                         {/* Display most recent broadcast */}
                         {mostRecentBroadcast ? (
@@ -162,9 +165,9 @@ const T_Dash = () => {
                     </div>
 
                 </div>
-                <div className='third  grid mt-10 p-10'>
+                <div className='grid md:p-10'>
 
-                    <div className='box bg-white py-4 grid justify-center my-5 justify-items-center '>
+                    <div className='box max-w-80 min-w-80 bg-white py-4 grid justify-center my-5 justify-items-center '>
                         <div className='heading mb-4 px-24 w-full py-2 '>
                             Documents
                         </div>
@@ -186,8 +189,8 @@ const T_Dash = () => {
                         </div>
 
                     </div>
-                    <div className='box bg-white p-4 grid h-fit justify-center my-5 justify-items-center '>
-                        <div className='heading mb-8 w-full py-2 px-20 '>
+                    <div className='box max-w-80 min-w-80 bg-white p-4 grid h-fit justify-center my-5 justify-items-center '>
+                        <div className='heading mb-8 w-full py-2  '>
                             Profile Activity
                         </div>
                         <div className='grid justify-center items-center gap-4 '>
