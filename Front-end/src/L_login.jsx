@@ -17,12 +17,7 @@ const L_login = () => {
     const [errorMessage, setErrorMessage] = useState('');
     const navigate = useNavigate()
 
-    useEffect(() => {
-        document.body.style.overflow = 'hidden';
-        return () => {
-            document.body.style.overflow = '';
-        };
-    }, []);
+
 
     const hideError = () => {
         setErrorMessage('');
