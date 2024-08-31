@@ -146,7 +146,7 @@ const T_signup = () => {
                         <div className='item-center justify-center flex mt-4' >
                             <button
                                 disabled={loading}
-                                className=' text-center font-bold mt-4 py-2 md:px-20 hover:bg-transparent hover:ring-4 hover:ring-white bg-slate-900 rounded-md text-white '
+                                className=' text-center font-bold mt-4 py-2 px-20 hover:bg-transparent hover:ring-4 hover:ring-white bg-slate-900 rounded-md text-white '
                                 type='Submit'
                             >
                                 Register
