@@ -261,6 +261,29 @@
   padding: 15px;
 }
 
+
+@media only screen and (max-width:550px) {
+  
+  .fin1 table{
+    width: 250px; 
+  }
+  
+  .fin1 td{
+  padding: 2px;
+  text-align: center;
+  }
+  
+  .fin1 tr{
+    font-size: small;
+  padding: 5px;
+  }
+  
+  .fin1 th{
+  padding: 8px;
+  }
+  
+  }
+
 .ntext2{
   width:300px;
   text-align: center;
