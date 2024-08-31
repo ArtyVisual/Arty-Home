@@ -82,7 +82,7 @@ const T_Maint = () => {
                     <span style={{ color: '#a27a47' }} className='maint zain'>MAINTENANCE</span>
                 </div>
 
-                <div className='md:ml-56 p-10 grid items-center justify-center'>
+                <div className='md:ml-56 px-16 grid items-center justify-center'>
                     <div className='grid mt-28 justify-items-center'>
                         <span className='mt-5 text-blue-700  text-center text-3xl anton-sc'>Active Requests</span>
                         <div className='box px-6 py-2 my-4 grid justify-items-start max-w-5xl'>
