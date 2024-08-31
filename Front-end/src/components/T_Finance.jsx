@@ -22,7 +22,7 @@ const T_Finance = () => {
 
                 <div className='fin1 md:ml-52 fin pt-32 justify-center flex flex-wrap items-center '>
 
-                    <div className='md:w-2/6 h-56 my-8 mx-10 px-6 py-10 box flex justify-between items-center'>
+                    <div className='md:w-2/6 h-56 my-8 mx-10 px-2 py-10 box flex justify-between items-center'>
 
                         <div className='vertical md:text-3xl text-xl  font-bold text-blue-700'>
                             AUGUST
@@ -59,7 +59,7 @@ const T_Finance = () => {
                         </div>
                     </div>
 
-                    <div className='md:w-2/6 h-56 my-8 mx-10 px-5 py-10 box flex justify-between items-center'>
+                    <div className='md:w-2/6 h-56 my-8 mx-10 px-2 py-10 box flex justify-between items-center'>
 
                         <div className='vertical md:text-3xl text-xl  font-bold text-blue-700'>
                             JULY
@@ -96,14 +96,14 @@ const T_Finance = () => {
                                     <td>Internet BIll</td>
                                     <td>799</td>
                                     <td>
-                                        <div className='text-center text-green-500 font-semibold text-lg px-2 lobster'>Paid</div>
+                                        <div className='text-center text-green-500 font-semibold md:text-lg px-2 lobster'>Paid</div>
                                     </td>
                                 </tr>
                             </table>
                         </div>
                     </div>
 
-                    <div className='md:w-2/6 h-56 my-8 mx-10 px-5 py-10 box flex justify-between items-center'>
+                    <div className='md:w-2/6 h-56 my-8 mx-10 px-2 py-10 box flex justify-between items-center'>
 
                         <div className='vertical md:text-3xl text-xl font-bold text-blue-700'>
                             JUNE
@@ -140,7 +140,7 @@ const T_Finance = () => {
                         </div>
                     </div>
 
-                    <div className='md:w-2/6 h-56 my-8 mx-10 px-5 py-10 box flex justify-between items-center'>
+                    <div className='md:w-2/6 h-56 my-8 mx-10 px-2 py-10 box flex justify-between items-center'>
 
                         <div className='vertical md:text-3xl text-xl  font-bold text-blue-700'>
                             MAY
@@ -177,7 +177,7 @@ const T_Finance = () => {
                         </div>
                     </div>
                     
-                    <div className='md:w-2/6 h-56 my-8 mx-10 px-5 py-10 box flex justify-between items-center'>
+                    <div className='md:w-2/6 h-56 my-8 mx-10 px-2 py-10 box flex justify-between items-center'>
 
                         <div className='vertical md:text-3xl text-xl  font-bold text-blue-700'>
                             APRIL
@@ -221,7 +221,7 @@ const T_Finance = () => {
                         </div>
                     </div>
 
-                    <div className='md:w-2/6 h-56 my-8 mx-10 px-5 py-10 box flex justify-between items-center'>
+                    <div className='md:w-2/6 h-56 my-8 mx-10 px-2 py-10 box flex justify-between items-center'>
 
                         <div className='vertical md:text-3xl text-xlmd:  font-bold text-blue-700'>
                             MARCH
