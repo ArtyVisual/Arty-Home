@@ -83,7 +83,7 @@ const T_Maint = () => {
                 </div>
 
                 <div className='md:ml-56 grid items-center justify-center'>
-                    <div className='grid mt-28 justify-items-center'>
+                    <div className='grid mt-28 px-10 justify-items-center'>
                         <span className='mt-5 text-blue-700  text-center text-3xl anton-sc'>Active Requests</span>
                         <div className='box px-6 py-2 my-4 mx-10 grid justify-items-start max-w-5xl'>
                             {recentRequests.length === 0 ? (
@@ -173,7 +173,7 @@ const T_Maint = () => {
                         </div>
                     </div >
 
-                    <div ref={newReqRef}  className='my-5 mx-10 grid justify-items-center items-start'>
+                    <div ref={newReqRef}  className='my-5 px-10 grid justify-items-center items-start'>
                         <div  className='py-5 text-3xl text-blue-700 anton-sc '>
                             Create New Request
                         </div>

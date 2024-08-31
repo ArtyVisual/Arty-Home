@@ -24,7 +24,7 @@ const T_Finance = () => {
 
                     <div className='md:w-2/6 h-56 my-8 mx-10 px-2 py-10 box flex justify-between items-center'>
 
-                        <div className='vertical md:text-3xl text-xl  font-bold text-blue-700'>
+                        <div className='vertical md:text-3xl text-xl pl-5 font-bold text-blue-700'>
                             AUGUST
                         </div>
                         <div>
@@ -223,7 +223,7 @@ const T_Finance = () => {
 
                     <div className='md:w-2/6 h-56 my-8 mx-10 px-2 py-10 pl-5 box flex justify-between items-center'>
 
-                        <div className='vertical md:text-3xl text-xlmd:  font-bold text-blue-700'>
+                        <div className='vertical md:text-3xl text-xl pl-5 font-bold text-blue-700'>
                             MARCH
                         </div>
                         <div>
