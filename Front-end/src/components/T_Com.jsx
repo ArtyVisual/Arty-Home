@@ -18,7 +18,7 @@ const T_Com = () => {
     return (
         <div>
             <div className='back'>
-                <div style={{ color: '#a27a47' }} className='top1 md:hidden left-1/3 -ml-5 top-5 text-3xl zain'>
+                <div style={{ color: '#a27a47' }} className='top1 md:hidden left-1/3 -ml-8 top-5 text-3xl zain'>
                     COMMUNICATION
                 </div> 
                 <div className='hidden md:flex top py-2'>
