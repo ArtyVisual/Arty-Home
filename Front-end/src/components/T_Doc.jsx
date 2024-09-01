@@ -50,7 +50,7 @@ const T_Doc = () => {
                                     style={{ width: '35px', height: '50px' }}>
                                 </lord-icon>
                             </div>
-                            <div className='text ntext1'>
+                            <div className='text ntext1 md:text-md text-sm'>
                                 {doc.name}
                             </div>
                             <div className='hidden md:flex justify-center items-center gap-5 cursor-pointer'>
