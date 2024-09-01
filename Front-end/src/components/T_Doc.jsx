@@ -16,7 +16,7 @@ const T_Doc = () => {
     return (
         <div>
             <div className='back'>
-                <div style={{ color: '#a27a47' }} className='top1 md:hidden left-1/2 -ml-11 top-5 text-3xl zain'>
+                <div style={{ color: '#a27a47' }} className='top1 md:hidden left-1/2 -ml-16 top-5 text-3xl zain'>
                     DOCUMENTS
                 </div>
                 <div className='hidden md:flex top py-2'>
