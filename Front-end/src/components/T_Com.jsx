@@ -32,7 +32,7 @@ const T_Com = () => {
                 <div className='md:ml-52 px-40 pt-32 justify-center flex flex-wrap items-center'>
                     {broadcasts.length > 0 ? (
                         broadcasts.map((broadcast, index) => (
-                            <div key={index} className='md:w-full h-fit my-8 mx-10 px-5 text-md py-4 md:py-10 box md:flex grid justify-items-center justify-center items-center'>
+                            <div key={index} className='md:w-full w-56 h-fit my-8 mx-10 px-5 text-md py-4 md:py-10 box md:flex grid justify-items-center justify-center items-center'>
                                 <div className='flex gap-2'>
                                     <div className='grid justify-items-center p-2 gap-2 text-md'>
                                         <span>Date :</span>                                
