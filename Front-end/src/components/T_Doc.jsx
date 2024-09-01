@@ -29,7 +29,7 @@ const T_Doc = () => {
 
                 <div className='md:ml-52 md:px-40 pt-32 justify-center flex flex-wrap items-center'>
                     {documents.map((doc) => (
-                        <div key={doc.id} className='md:w-full w-72 md:h-20 h-fit my-8 md:mx-10 mx-4 px-2 md:py-10 py-2 box flex justify-evenly items-center'>
+                        <div key={doc.id} className='md:w-full w-72 md:h-20 h-fit my-8 md:mx-10 mx-4 px-2 md:py-10 py-2 box flex md:justify-evenly justify-between items-center'>
                             <div className='hidden md:flex'>
                                 <lord-icon
                                     src="https://cdn.lordicon.com/wzwygmng.json"
