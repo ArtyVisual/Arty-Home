@@ -18,7 +18,7 @@ const T_Com = () => {
     return (
         <div>
             <div className='back'>
-                <div style={{ color: '#a27a47' }} className='top1 md:hidden left-1/3 top-5 text-3xl zain'>
+                <div style={{ color: '#a27a47' }} className='top1 md:hidden left-1/3 -ml-5 top-5 text-3xl zain'>
                     COMMUNICATION
                 </div> 
                 <div className='hidden md:flex top py-2'>
@@ -29,17 +29,17 @@ const T_Com = () => {
                     <span style={{ color: '#a27a47' }} className='comm zain'>COMMUNICATION</span>
                 </div>
 
-                <div className='md:ml-52 px-40 pt-32 justify-center flex flex-wrap items-center'>
+                <div className='md:ml-52 md:px-40 pt-32 justify-center flex flex-wrap items-center'>
                     {broadcasts.length > 0 ? (
                         broadcasts.map((broadcast, index) => (
-                            <div key={index} className='md:w-full w-56 h-fit my-8 mx-10 px-5 text-md py-4 md:py-10 box md:flex grid justify-items-center justify-center items-center'>
+                            <div key={index} className='md:w-full gap-10 w-62 h-fit my-8 mx-10 md:px-5 px-4 md:py-10 py-5 box md:flex grid justify-items-center justify-center items-center'>
                                 <div className='flex gap-2'>
-                                    <div className='grid justify-items-center p-2 gap-2 text-md'>
+                                    <div className='grid justify-items-center md:p-2 gap-2 text-md'>
                                         <span>Date :</span>                                
                                         <span>From :</span>
                                         <span>Subject :</span>
                                     </div>
-                                    <div className='grid justify-items-start p-2 ntext1 gap-2 text-md'>
+                                    <div className='grid justify-items-start md:p-2 ntext1 text gap-2 text-md'>
                                         <span>{broadcast.date}</span>
                                         <span>{broadcast.from}</span>
                                         <span>{broadcast.subject}</span>
