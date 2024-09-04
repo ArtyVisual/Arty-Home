@@ -54,10 +54,10 @@ const T_Lease = () => {
                     <span style={{ color: '#a27a47' }} className='lease zain '>LEASES</span>
                 </div>
                 <div className='md:ml-32 grid justify-items-center items-center justify-center'>
-                     <div className='md:pl-20 grid justify-items-center py-4'>
+                     <div className='md:pl-20 md:pt-32 grid justify-items-center py-4'>
                         <div className='p-4 text-3xl text-blue-700 anton-sc'>
                             Current Lease
-                        </div>
+                        </div> 
                         <div className='box md:flex grid justify-items-center justify-center items-center gap-5 p-8'>
                             <div>
                                 <img className='w-52 h-32 ring-1 ring-yellow-950 rounded-md' src={house1} alt="" />
