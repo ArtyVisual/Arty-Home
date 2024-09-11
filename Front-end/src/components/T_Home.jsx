@@ -98,7 +98,7 @@ const T_Home = () => {
             <div className='md:hidden grid justify-items-start gap-1 text-white '>
 
                 <div className="top py-5 px-5 flex justify-between p-2 top-0 z-50">
-                    <button onMouseEnter={toggleMenu}>
+                    <button onClick={toggleMenu}>
                         <img src={menuOpen ? cross : bb} alt="menu toggle" />
                     </button>
                     <div className='flex justify-start items-center' >
