@@ -20,7 +20,7 @@ app.use(express.json())
 
 app.options('*', cors(corsOptions)); // For all routes
 
-mongoose.connect("mongodb+srv://abbasvajwana1:abbasatlas77@cluster1.0bhubyy.mongodb.net/rentDB", { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://abbasvajwana1:AbbasMongo7@cluster1.0bhubyy.mongodb.net/rentDB", { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log("Connected to MongoDB"))
     .catch(err => console.error("Could not connect to MongoDB...", err));
 
@@ -70,7 +70,6 @@ app.post('/T_Login', (req, res) => {
             }
         });
 });
-
 
 app.post('/T_Register', (req, res) => {
     TenantsModel.create(req.body)
@@ -124,7 +123,6 @@ app.post('/L_Register', (req, res) => {
 
         });
 });
-
 
 app.listen(3001,()=>{
     console.log("server is running")
